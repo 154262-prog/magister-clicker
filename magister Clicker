@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <title>Lantings Clicker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app">
+    <header>
+      <h1>Lantings Clicker</h1>
+      <div class="stats">
+        <div>Per seconde: <span id="perSecond">0</span></div>
+        <div>Per klik: <span id="perClick">1</span></div>
+        <div>Lantings: <span id="lantings">0</span></div>
+      </div>
+    </header>
+
+    <div class="main">
+      <div class="clicker">
+        <button class="btn" id="playBtn">PLAY</button>
+        <div class="circle" id="clickCircle">
+          <span>Klik!</span>
+        </div>
+        <p class="small">Gebruik ENTER om te klikken.</p>
+      </div>
+
+      <div class="menu">
+        <button data-panel="shop">Shop</button>
+        <button data-panel="gamble">Gamble</button>
+        <button data-panel="skins">Skins</button>
+        <button data-panel="settings">Settings</button>
+        <button data-panel="exit">Exit</button>
+      </div>
+    </div>
+
+    <div class="panel" id="panel-shop">
+      <h2>Shop</h2>
+      <div class="row">Lantings: <span id="shopLantings">0</span></div>
+      <div class="shop-item">
+        <span>+1 per klik</span>
+        <span>Prijs: 30</span>
+        <button class="btn secondary" data-upgrade="click">Koop</button>
+      </div>
+    </div>
+
+    <div class="panel" id="panel-gamble">
+      <h2>Gamble</h2>
+      <p>Hier kun je later blackjack, rolls en meer toevoegen.</p>
+    </div>
+
+    <div class="panel" id="panel-skins">
+      <h2>Skins</h2>
+      <p>Skins komen hier.</p>
+    </div>
+
+    <div class="panel" id="panel-settings">
+      <h2>Settings</h2>
+      <p>Instellingen komen hier.</p>
+    </div>
+
+    <div class="panel" id="panel-exit">
+      <h2>Exit</h2>
+      <p>Hier kun je een reset‑knop of bevestiging plaatsen.</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
