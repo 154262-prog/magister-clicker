@@ -33,15 +33,29 @@
         <button data-panel="exit">Exit</button>
       </div>
     </div>
+<div class="panel" id="panel-gamble">
+  <h2>Blackjack</h2>
 
-    <div class="panel" id="panel-shop">
-      <h2>Shop</h2>
-      <div class="row">Lantings: <span id="shopLantings">0</span></div>
-      <div class="shop-item">
-        <span>+1 per klik</span>
-        <span>Prijs: 30</span>
-        <button class="btn secondary" data-upgrade="click">Koop</button>
-      </div>
+  <p>Saldo: <span id="bjMoney">0</span></p>
+
+  <label>Inzet:</label>
+  <input type="number" id="bjBet" value="10" min="1">
+
+  <br><br>
+
+  <button class="btn" id="bjStart">Start ronde</button>
+  <button class="btn secondary" id="bjHit">Hit</button>
+  <button class="btn secondary" id="bjStand">Stand</button>
+
+  <h3>Dealer:</h3>
+  <p id="bjDealer">?</p>
+
+  <h3>Jij:</h3>
+  <p id="bjPlayer">?</p>
+
+  <p id="bjResult"></p>
+</div>
+
     </div>
 
     <div class="panel" id="panel-gamble">
